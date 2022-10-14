@@ -1,0 +1,7 @@
+<div>
+    {{#each response}}
+        <img src="{{this.image}}" alt="{{this.title}}">
+        <h6>{{this.title}}</h6>
+        <a href="/movie/{{this._id}}">See more</a>
+    {{/each}}
+</div>
