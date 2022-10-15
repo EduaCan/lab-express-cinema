@@ -1,7 +1,16 @@
-<div>
+{{>navbarpartial}}
+<div id="movies-title-div">
+<h2>Ironhack Cinema</h2>
+<h5>Click on the movie to check the showtimes</h5>
+</div>
+
+<div id="movies-div">
     {{#each response}}
+        <div id="movies-card-div">
+
         <img src="{{this.image}}" alt="{{this.title}}">
-        <h6>{{this.title}}</h6>
+        <p>{{this.title}}</p>
         <a href="/movie/{{this._id}}">See more</a>
+        </div>
     {{/each}}
 </div>

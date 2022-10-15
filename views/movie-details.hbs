@@ -1,6 +1,13 @@
-<div>
-    <a href="/movies">Go back</a>
+{{>navbarpartial}}
+
+<div id="movie-details-div">
+<div id="movie-details-img-div">
     <img src="{{response.image}}" alt="{{response.title}}">
+
+</div>
+    <div id="movie-details-info-div""">
+
+    <a href="/movies">Go back</a>
     <h4>{{response.title}}</h4>
     <h5>{{response.director}}</h5>
     <h6>Stars</h6>
@@ -13,4 +20,5 @@
     {{#each response.showtimes}}
         <span>{{this}} | </span>
     {{/each}}
+    </div>
 </div>
